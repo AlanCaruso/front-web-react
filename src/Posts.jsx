@@ -1,5 +1,5 @@
 export async function getPosts() {
-    const response = await fetch("http://localhost:3030/blog")
+    const response = await fetch("http://127.0.0.1:3001/blogs")
 
     const data = await response.json()
 
