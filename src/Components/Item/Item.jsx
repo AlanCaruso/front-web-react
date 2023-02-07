@@ -1,12 +1,12 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Item(props) {
 
     return (
         <>
-
             <div className="xl:w-1/3 md:w-1/2 p-4">
-                <a href={"/blogs/" + props.id}>
+                <Link to={"/blogs/" + props.id}>
                     <div className="bg-white p-6 rounded-lg">
                         <img className="lg:h-60 xl:h-56 md:h-64 sm:h-72 xs:h-72 h-72 rounded w-full object-cover object-center mb-6" src={props.img} alt="Image Size 720x400" />
                         <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font mb-4">{props.email}</h3>
@@ -24,7 +24,7 @@ function Item(props) {
                             </div>
                         </div>
                     </div>
-                </a>
+                </Link>
             </div>
 
         </>

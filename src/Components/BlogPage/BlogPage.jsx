@@ -1,10 +1,18 @@
 import React from 'react'
-import { items } from "../../data"
+import { useParams } from 'react-router-dom'
 
-function BlogPage() {
+
+const BlogPage = ({ blogs }) => {
+    const { blogId } = useParams()
+    console.log("all blogs", blogs)
+    console.log("blog id", blogId)
+
+    const blog = blogs.data.find(blog => blog.creador._id === blogId)
+
+    console.log("blog solicitado", blog)
 
     return (
-        <div>BlogPage Info </div>
+        <div>BlogPage Info {blog.titulo}</div>
     )
 }
 
