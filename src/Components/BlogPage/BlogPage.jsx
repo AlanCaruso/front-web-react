@@ -3,9 +3,8 @@ import { items } from "../../data"
 
 function BlogPage() {
 
-
     return (
-        <div>BlogPage Info</div>
+        <div>BlogPage Info </div>
     )
 }
 

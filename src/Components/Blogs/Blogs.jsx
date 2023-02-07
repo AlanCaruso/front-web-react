@@ -22,6 +22,8 @@ function Blogs() {
                             description={i.descripcion}
                             creatorImg={i.creador.img}
                             creatorName={i.creador.nombre}
+                            itemKey={i.creador._id}
+                            key={i._id}
 
                         />
                     ))
