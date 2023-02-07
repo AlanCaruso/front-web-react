@@ -1,4 +1,6 @@
 import Home from "./Pages/Home/Home"
+import Blogs from "./Components/Blogs/Blogs"
+import BlogPage from "./Components/BlogPage/BlogPage"
 import { Routes, Route, useParams } from 'react-router-dom';
 import './App.css'
 
@@ -11,7 +13,8 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/" element={<Home />}></Route>
-        <Route path="/blog/:_id"></Route>
+        <Route path="blogs" element={<Blogs />}></Route>
+        <Route path="blogs/:_id" element={<BlogPage />} />
       </Routes>
     </div>
   )
