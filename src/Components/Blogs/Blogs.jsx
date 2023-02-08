@@ -15,14 +15,14 @@ function Blogs() {
                 {
                     items.data.map(i => (
                         <Item
-                            id={i.creador._id}
+                            id={i._id}
                             img={i.img}
                             email={i.creador.email}
                             title={i.titulo}
                             description={i.descripcion}
                             creatorImg={i.creador.img}
                             creatorName={i.creador.nombre}
-                            itemKey={i.creador._id}
+                            itemKey={i._id}
                             key={i._id}
 
                         />
