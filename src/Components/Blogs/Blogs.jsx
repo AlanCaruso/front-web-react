@@ -1,8 +1,7 @@
 import React from 'react'
 import Item from "../Item/Item"
-import { items } from "../../data"
 
-function Blogs() {
+function Blogs({ posts }) {
     return (
         <section className="text-gray-600 body-font">
             <div className="container px-5 py-24 mx-auto max-w-7x1 flex flex-wrap -m-4">
@@ -13,7 +12,7 @@ function Blogs() {
                     </div>
                 </div>
                 {
-                    items.data.map(i => (
+                    posts.map(i => (
                         <Item
                             id={i._id}
                             img={i.img}
